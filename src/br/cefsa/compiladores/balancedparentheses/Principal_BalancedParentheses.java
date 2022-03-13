@@ -8,11 +8,14 @@ public class Principal_BalancedParentheses {
 	{
 		String enderecoTxtLeitura = "D:\\Teste\\validar.txt";
 		String enderecoTxtGravacao = "D:\\Teste\\validar-check.txt";
+		
 		String conteudo = Utilitarios.lerArquivoTxt(enderecoTxtLeitura);
 		
 		String conteudoProcessado = Utilitarios.validaLinhas(conteudo);
 		
 		Utilitarios.gravarArquivoTxt(enderecoTxtGravacao, conteudoProcessado);
+		
+		System.out.println(conteudoProcessado);
 
 	}
 

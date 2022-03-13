@@ -70,6 +70,7 @@ public class Utilitarios
 		{
 			char[] linhaAtualEmChars = textoLinhas[i].toCharArray();
 			linhaEstaOk[i] = false;
+			pilhaAbertos.clear();
 			
 			// Este for itera pelos caracteres de cada linha
 			for(int k = 0; k < linhaAtualEmChars.length; k++)
